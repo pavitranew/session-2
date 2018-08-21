@@ -27,6 +27,34 @@ img {
   width: 100%;
 }
 
+header {
+  height: 20vh;
+  background: url(../img/img.jpg) center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 7vw;
+  font-weight: 400;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 420px) {
+  header {
+    height: 12vh;
+  }
+}
+
 body.fixed-nav nav {
   position: fixed;
   top: 0;
@@ -56,15 +84,6 @@ body.fixed-nav .site-wrap {
           transform: scale(1);
 }
 
-a {
-  color: #007eb6;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .logo img {
   padding-top: 0.25rem;
   width: 2.5rem;
@@ -73,27 +92,11 @@ a:hover {
 .logo {
   max-width: 0;
   overflow: hidden;
-  background: #ffffff;
+  background: white;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-weight: 600;
   font-size: 30px;
-}
-
-@media (min-width: 46.25em) {
-  .logo {
-    display: none;
-  }
-}
-
-.navitems {
-  display: none;
-}
-
-@media (min-width: 46.25em) {
-  .navitems {
-    display: block;
-  }
 }
 
 .fixed-nav .logo {
@@ -133,52 +136,5 @@ nav a {
   text-decoration: none;
   display: inline-block;
   color: white;
-}
-
-@media screen and (min-width: 46.25em) {
-  header {
-    height: 10vh;
-  }
-}
-
-header {
-  height: 10vh;
-  background: url(../img/img.jpg) center no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (min-width: 46.25em) {
-  header {
-    height: 20vh;
-  }
-}
-
-header h1 {
-  color: white;
-  font-size: 7vw;
-  font-weight: 400;
-  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-@media (min-width: 46.25em) {
-  header h1 {
-    font-size: 8vw;
-    font-weight: 300;
-  }
-}
-
-@media (max-width: 420px) {
-  header {
-    height: 12vh;
-  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,32 @@
+{
+  "name": "session-2",
+  "version": "1.0.0",
+  "description": "1. Bob on [Template Strings](https://youtu.be/INPob8yPyBo)\r 1. Bob on DOM scripting parts [one](https://youtu.be/0ik6X4DJKCc), [two](https://youtu.be/mPd2aJXCZ2g), [three](https://youtu.be/wK2cBMcDTss) and [four](https://youtu.be/i37KVt_IcXw).  Please make every effort to follow along on your computer.\r 1. If you want more information on navigating with JSON and JavaScript watch [this video](https://www.youtube.com/watch?v=xN9QxPtK2LM). The source code for the lessons is [here](https://github.com/curran/screencasts/tree/gh-pages/navigation).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server \"app\" --files \"app\"",
+    "json": "json-server --watch db.json --port 3004",
+    "sassy": "node-sass --watch \"scss\"  --output \"app/css/\" --source-map true",
+    "boom!": "concurrently \"npm run start\" \"npm run json\" \"npm run sassy\" ",
+    "boomlet!": "concurrently \"npm run start\" \"npm run json\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavitranew/session-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavitranew/session-2/issues"
+  },
+  "homepage": "https://github.com/pavitranew/session-2#readme",
+  "keywords": [],
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "concurrently": "^3.6.1",
+    "json-server": "^0.14.0",
+    "node-sass": "^4.9.3"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,51 @@
+.logo img {
+    padding-top: 0.25rem;
+    width: 2.5rem;
+}
+.logo {
+    max-width:0;
+    overflow: hidden;
+    background: #ffffff;
+   @media (min-width: $break-two)
+     {
+        display:  none;
+      }
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 30px;
+}
+.navitems {
+    display: none;
+    @media (min-width: $break-two){
+      display: block;
+    }
+  }
+.fixed-nav .logo {
+    max-width:500px;
+}
+nav {
+    background: #007eb6;
+    width: 100%;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
